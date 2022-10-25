@@ -1,0 +1,44 @@
+legend , fieldset , select , h4
+{
+	color: black;
+	font-weight: bold;
+	font-family: cursive;
+}
+.soso , select{
+     width: 200px;
+     border: 2px solid mediumturquoise;
+     border-radius: 40px;
+     padding: 4px;
+     margin: 5px;
+     box-shadow: 2px 2px 2px mediumturquoise;
+
+
+
+}
+
+fieldset{
+	width: 95%;
+margin: 15px;
+border: 10 px solid black;
+border-radius: 40px;
+padding: 20px;
+background-color: mediumturquoise;
+box-shadow: 2px 2px 2px black;
+}
+
+h1,h2 {
+	color: black;
+	text-align: center;
+
+}
+
+h4 {
+color:black;
+font-family: cursive;
+
+}
+
+table {
+bottom: 2px;
+width: 50%;
+}

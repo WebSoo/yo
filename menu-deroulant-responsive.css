@@ -1,0 +1,152 @@
+body{
+    font-family:  verdana, calibri, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav > ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+}
+
+nav > ul > li{
+    float: left;
+}
+
+.submenu{
+    display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+nav{
+    width: 100%;
+    background-color: #324578;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #FFF;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 100000;
+}
+
+.submenu li{
+    border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #222538;
+    width: 270px;
+}
+
+.menu-html:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-css:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-js:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #BBB;
+    background-color: rgba(220, 220, 220, 0.15);
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30 px 20px 30px;
+}
+
+.menu-html .submenu{
+    background-color: rgb(230, 100, 40);
+}
+
+.menu-css .submenu{
+    background-color: rgb(000, 160, 240);
+}
+
+.menu-js .submenu{
+    background-color: rgb(251, 216, 99);
+}
+
+.submenu li:hover a{
+    color: #EEE;
+    font-weight: bold;
+}
+
+.menu-html .submenu li:hover{
+    background-color: rgb(210, 77, 60);
+}
+
+.menu-css .submenu li:hover{
+    background-color: rgb(000, 115, 200);
+}
+
+.menu-js .submenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
+
+
+        div{
+            border: 8px solid blueviolet;
+            border-radius: 8px;
+            padding: 10px;
+            margin: 10%;
+            font-size: 400%;
+            font-family: cursive;
+            text-align: center;
+            background-color: ghostwhite;
+            opacity: 1;
+            height: 300px;
+        }
+
+
+html{  
+   margin: 0;
+   padding: 0;     
+   background: url(background.gif) no-repeat center fixed;
+   -webkit-background-size:  cover;
+background-size: cover; }
+

@@ -1,0 +1,28 @@
+body
+{background-color: #FFEEEE;}
+
+
+
+div
+{border: 3px solid plum;
+border-radius: 8px;
+font-family: arial;
+padding-top: 1em;
+text-align: justify;}
+
+.s1
+{border: 3px solid LightBlue;
+border-radius: 8px;
+margin: 26px;
+padding: 1em;
+background:LightCyan;
+}
+
+.s2
+{border: 3px solid DarkSeaGreen;
+border-radius: 8px;
+margin: 26px;
+padding-right: 1em;
+padding-left:1em ;
+
+}
