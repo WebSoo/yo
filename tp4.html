@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	</head>
+	<script type="text/javascript">
+		function swit()
+		{
+
+			var a=""
+			a = document.fo.a.value;
+			document;fo.a.value = document.fo.b.value;
+			document.fo.b.value = a;
+		}
+	</script>
+	<form name="fo">
+		<input type="text" name="a" id="a"><br>
+		<input type="text" name="b" id="b"><br>
+		<input type="button" value="permutter" onclick="swit()">
+	</form>
+
+
+
+</body>
+</html>
