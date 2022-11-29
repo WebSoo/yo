@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+
+		<style>
+			.invoice-box {
+				max-width: 800px;
+				margin: auto;
+				padding: 30px;
+				border: 1px solid #eee;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+				font-size: 16px;
+				line-height: 24px;
+				font-family: sans-serif;
+				color: #555;
+			}
+
+			.invoice-box table {
+				width: 100%;
+				line-height: inherit;
+				text-align: left;
+			}
+
+			.invoice-box table td {
+				padding: 5px;
+				vertical-align: top;
+			}
+
+			.invoice-box table tr td:nth-child(2) {
+				text-align: center;
+			}
+
+			.txt
+			{
+			text-align: center;
+			background-color: black;
+			color: white;
+
+			}
+			.zone 
+			{
+			text-align: center;
+			background-color: lightgrey;
+			text-align: center;
+			width: 100%;
+			}
+			.ti{
+				font-weight: bold;
+			}
+			input {
+			border: none;
+			outline: none
+			}
+
+		</style>
+
+		<script type="text/javascript">
+		
+		function calculer(argument) 
+		{
+			var a = document.getElementById("p1").value;
+			var b = document.getElementById("q1").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r1").value = c;
+
+			var a = document.getElementById("p2").value;
+			var b = document.getElementById("q2").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r2").value = c;
+
+			var a = document.getElementById("p3").value;
+			var b = document.getElementById("q3").value;
+			var c = Number(a) * Number(b);
+			document.getElementById("r3").value = c;
+
+			var a = document.getElementById("r1").value;
+			var b = document.getElementById("r2").value;
+			var c = document.getElementById("r3").value;
+			var d = Number(a) + Number(b) + Number(c);
+			document.getElementById("f1").value = d;
+		}
+
+		function effacer()
+		{
+			r1.value=" ";
+			p1.value=" ";
+			q1.value=" ";
+			r2.value=" ";
+			q2.value=" ";
+			p2.value=" ";
+			r3.value=" ";
+			q3.value=" ";
+			p3.value=" ";
+			f1.value=" ";
+
+		}
+
+	</script>
+	</head>
+
+	<body>
+		
+		<div class="invoice-box">
+			<table cellpadding="0" cellspacing="0">
+				<tr class="top">
+					<td colspan="2">
+						<table>
+							
+							<tr>
+								<td class="title">
+									<img src="apple.png" style="width: 25%; max-width: 300px" /> <br> <br>
+								</td>
+								<td>
+									Date création : 15/11/22 <br />
+									<input type="number" placeholder="N° Facture :">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td>
+						<table>
+							<tr>
+								<td class="ti">
+									<u> Destinataire </u> <br> <br>
+									<input type="text" placeholder="Nom"> <br>
+									<input type="text" placeholder="Nom de la société"> <br>
+									<input type="text" placeholder="Adresse Postale"> <br>
+									<input type="text" placeholder="Téléphone"> <br>
+									<input type="text" placeholder="Email"> <br>
+								</td>
+								
+
+								<td class="ti">
+									<u> Envoyer à </u> <br> <br>
+									<input type="text" placeholder="Nom"> <br>
+									<input type="text" placeholder="Nom de la société"> <br>
+									<input type="text" placeholder="Adresse Postale"> <br>
+									<input type="text" placeholder="Téléphone"> <br>
+									<input type="text" placeholder="Email"> <br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+		<table>
+			<br> <br>
+		<tr>
+			<td class="txt"> Article : </td>
+			<td class="txt"> Quantité : </td>
+			<td class="txt"> Prix : </td>
+			<td class="txt"> Résultat : </td>
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n1" class="zone" > </td>
+			<td> <input type="text" name="num1" id="p1" class="zone" > </td>
+			<td> <input type="text" name="num1" id="q1" class="zone" > </td>
+			<td> <input type="text" name="num1" id="r1" class="zone" placeholder="0"> </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n2" class="zone" > </td>
+			<td> <input type="text" name="num1" id="p2" class="zone" > </td>
+			<td> <input type="text" name="num1" id="q2" class="zone" > </td>
+			<td> <input type="text" name="num1" id="r2" class="zone" placeholder="0" > </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n3" class="zone" > </td>
+			<td> <input type="text" name="num1" id="p3" class="zone" > </td>
+			<td> <input type="text" name="num1" id="q3" class="zone" > </td>
+			<td> <input type="text" name="num1" id="r3" class="zone" placeholder="0"> </td>
+
+		</tr>
+		<tr>
+			<td> <input type="text" name="num1" id="n1" class="vide"> </td>
+			<td> <button class="bt" onclick="effacer()"> reinitialiser </button> </td>
+			<td> <button class="bt" onclick="calculer()"> résultat </button> </td>
+			<td> <input type="text" name="num1" id="f1" placeholder="0" class="zone"> </td>
+
+		</tr>
+
+</table>
+
+				
+			</table>
+		</div>
+	</body>
+</html>
