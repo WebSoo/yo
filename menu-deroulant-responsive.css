@@ -130,16 +130,16 @@ nav > ul > li:hover a{
 
 
         div{
-            border: 8px solid blueviolet;
-            border-radius: 8px;
-            padding: 10px;
-            margin: 10%;
-            font-size: 400%;
-            font-family: cursive;
-            text-align: center;
-            background-color: ghostwhite;
-            opacity: 1;
-            height: 300px;
+text-align: center;
+    padding: 100px;
+    font-size: 35px;
+    font-family: monospace;
+    color: white;
+    border:  solid palevioletred;
+    border-style: dashed;
+    margin: 100px;
+    border-radius: 100px;
+    opacity: .9;
         }
 
 
